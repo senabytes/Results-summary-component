@@ -27,7 +27,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(hsl(234, 85%, 45%), hsla(256, 72%, 46%, 1));
+    background: radial-gradient(circle,  hsl(252, 100%, 67%), hsla(256, 72%, 46%));
     color: hsl(221, 100%, 96%);
     box-sizing: border-box;
     border-radius: 8px;
@@ -38,9 +38,10 @@ body{
 
 .result h1{
     align-items: center;
-    margin-top: 3rem;
+    margin-top: 1rem;
     color: hsl(241, 100%, 89%);
     font-size: 20px;
+    padding: 1rem;
     
 }
 
@@ -59,10 +60,10 @@ body{
 .rate::before {
     content: "";
     position: absolute;
-    width: 150px; 
-    height: 150px;
+    width: 170px; 
+    height: 170px;
     border-radius: 50%;
-    background: linear-gradient( hsl(252, 100%, 67%), hsl(234, 85%, 45%));
+    background:radial-gradient(circle,  hsl(252, 100%, 67%), hsla(256, 72%, 46%, 1));
     z-index: -1;
 
 }
@@ -82,7 +83,9 @@ body{
 .rate p{
     position: relative;
     z-index: 1;
-    font-size: 20px;
+    font-size: 18px;
+    margin-top: -2rem;
+    color: hsl(252, 100%, 67%);
 }
 
 
@@ -110,7 +113,7 @@ body{
     color: hsl(221, 100%, 96%);
     box-sizing: border-box;
     border-radius: 8px;
-    height: 385px;
+    height: 395px;
     width: 350px;
     
 
@@ -269,5 +272,12 @@ body{
     border-radius: 25px;
     width: 250px;
     height: 50px;
+    transition: 0.3, ease;
+    cursor: pointer;
+
+}
+
+.summary button:hover{
+    background-color: hsl(224, 30%, 27%);
 
 }
